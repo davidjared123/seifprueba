@@ -33,7 +33,7 @@
           :key="item.title"
           link
         >
-          <v-list-item-icon to='{{}}'>
+          <v-list-item-icon to=''>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
 

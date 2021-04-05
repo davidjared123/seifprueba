@@ -18,7 +18,7 @@
             ></v-img>
 
             <div class="card-content text-center pa-1">
-              <h4>Seif</h4>
+              <h4>{{item.name}}</h4>
               <v-btn
                 min-width="100px"
                 rounded
@@ -74,12 +74,12 @@ export default {
       ],
     dialog: false,
     cards: [
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
-      { img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'Seif',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'Seif Módulos',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'Controller',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'Visitantes Robustos',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'PTT',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
+      { name: 'Controlpharm',img: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" },
     ],
   }),
 };

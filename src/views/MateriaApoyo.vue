@@ -42,11 +42,13 @@
             </v-col>
 
             <v-col cols="12">
-              <v-textarea
+              <!-- <v-textarea
                 clearable
                 clear-icon="mdi-close-circle"
                 label="Text"
-              ></v-textarea>
+              ></v-textarea> -->
+              <p>Texto*</p>
+              <editor />
             </v-col>
           </v-row>
         </v-container>
@@ -82,7 +84,7 @@
           <div class="icon mt-5 ">
             <v-icon x-large dark>mdi-check</v-icon>
           </div>
-          <div class="text-h5 pb-6">Pregunta actualizada</div>
+          <div class="text-h5 pb-6 mt-2">Pregunta agregada</div>
         </v-card-text>
         <v-card-actions class="justify-end">
           <v-btn text @click="modal = false">Cerrar</v-btn>
@@ -96,10 +98,15 @@
 
 <script>
 // @ is an alias to /src
+import 'codemirror/lib/codemirror.css';
+import '@toast-ui/editor/dist/toastui-editor.css';
+ 
+import { Editor } from '@toast-ui/vue-editor';
 
 export default {
+
   name: "MaterialApoyo",
-  components: {},
+  components: {editor: Editor,},
   data: () => ({
     modal: false,
     producto: [
