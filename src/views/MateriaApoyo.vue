@@ -10,8 +10,10 @@
       >
         </div>
 
-      <v-btn x-small 
-      color="blue-grey" flat class="router-link " to="/Preguntas">ver preguntas</v-btn>
+      <v-btn x-small text color="white" flat class="router-link" to="/Preguntas">
+       preguntas
+      <v-icon small class="ml-2">mdi-eye-outline</v-icon>
+       </v-btn>
 
     </div>
 <div class="container">

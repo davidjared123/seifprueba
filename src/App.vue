@@ -46,7 +46,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color='white' flat dense class="">
+    <v-app-bar app absolute color='white' flat dense>
       <h1 class="title">Centro de ayudas Seif</h1>
 
     </v-app-bar>
