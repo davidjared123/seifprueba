@@ -19,7 +19,7 @@
           icon
           @click.stop="mini = !mini"
         >
-          <v-icon>mdi-chevron-left</v-icon>
+          <v-icon class="btncolor">mdi-chevron-left</v-icon>
         </v-btn>
       </v-list-item>
 
@@ -29,11 +29,13 @@
       
       dense block>
         <v-list-item
+         :to='item.link'
           v-for="item in items"
           :key="item.title"
           link
         >
-          <v-list-item-icon to=''>
+
+          <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
@@ -44,7 +46,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar color='white' flat dense class="px-13">
+    <v-app-bar app color='white' flat dense class="">
       <h1 class="title">Centro de ayudas Seif</h1>
 
     </v-app-bar>
@@ -67,9 +69,9 @@ export default {
   data: () => ({
     drawer: true,
         items: [
-          { title: 'Vista principal', icon: 'mdi-home-city', link:'/' },
-          { title: 'Material', icon: 'mdi-account', link:'/MaterialApoyo' },
-          { title: 'Preguntas', icon: 'mdi-account-group-outline', link:'/Preguntas' },
+          { title: 'Vista principal', icon: 'mdi-home', link:'/' },
+          { title: 'Material', icon: 'mdi-book-plus', link:'/MaterialApoyo' },
+          { title: 'Preguntas', icon: ' mdi-account-question', link:'/Preguntas' },
         ],
         mini: true,
   }),

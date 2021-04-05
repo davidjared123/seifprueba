@@ -2,7 +2,7 @@
   <div class="home">
    
         <div class="navbar">
-          <v-btn to="/MaterialApoyo" small v-bind="attrs" v-on="on">Añadir material de apoyo</v-btn>
+          <v-btn text block dark class="ma-0" to="/MaterialApoyo" small v-bind="attrs" v-on="on">Añadir material de apoyo</v-btn>
         </div>
     <div class="navbar2">
       <h4 class="text-center">Nuestros productos</h4>
@@ -90,7 +90,7 @@ export default {
   /* margin-top: ; */
   width: 100%;
   background-color: rgb(28, 154, 170);
-  padding: 0.2em;
+  /* padding: 0.2em; */
   text-align: center;
   border-top: solid black 1px;
   border-bottom: solid black 1px;
